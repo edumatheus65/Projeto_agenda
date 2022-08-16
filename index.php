@@ -25,7 +25,9 @@
                     <td scope="row" class="col-id"><?= $contact["id"] ?></td>
                     <td scope="row"><?= $contact["name"] ?></td>
                     <td scope="row"><?= $contact["phone"] ?></td>
-                    <td class="actions"></td>
+                    <td class="actions">
+                        <a href="#"><i class="fas fa-eye check-icon"></i></a>
+                    </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
