@@ -19,12 +19,15 @@
                     <th scope="col">#</th>
                 </tr>
             </thead>
+            <tbody>
+                <?php foreach($contacts as $contact): ?>
+                    <tr>
+                    <td scope="row" class="col-id"><?= $contact["id"] ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
         </table>
-
-
-
-
-        <p>TEM CONTATOS</p>
+       
     <?php else: ?>
         <p id="empty-list-text">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL ?>./create.php">Clique aqui para adicionar</a></p>
         
