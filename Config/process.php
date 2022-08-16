@@ -10,6 +10,8 @@ include_once("connection.php");
 //Para eu poder saber qual a minha base URL aqui nesse cara
 include_once("url.php");
 
+$contacts = [];
+
 //Primeira coisa a fazer é puxar os dados da query
 $query = "SELECT * FROM contacts";
 //Como eu não tenho paramentros eu não tenho bind_paran aqui nesse caso

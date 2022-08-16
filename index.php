@@ -2,8 +2,19 @@
     include_once("templates/header.php")
 ?>
 
-    <h1>Testando agenda</h1>
-    <i class="fas fa-eye"></i>
+   <div class="container">
+    <?php if(isset($printMSG) && $printMSG != ''): ?>
+        <p id="msg"><?php $printMSG ?></p>        
+    <?php endif; ?>
+
+    <h1 id="man-title">Minha agenda</h1>
+    <?php if(count($contacts) > 0): ?>
+        <p>TEM CONTATOS</p>
+    <?php else: ?>
+        <p id="empty-list-text">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL ?>./create.php">Clique aqui para adicionar</a></p>
+        
+    <?php endif; ?>
+   </div>
 
 <?php
 include_once("templates/footer.php")
