@@ -17,4 +17,5 @@ $stmt = $conn->prepare($query);
 
 $stmt->execute();
 
+//Não esquecer de inserir o processamento no Header, pois toda vez que eu iniciar uma página eu vou ter o processamento do meu process.php
 $contacts = $stmt->fetchAll();
