@@ -23,3 +23,11 @@
     <link rel="stylesheet" href="<?php $_BASE_URL ?>css/styles.css">
 </head>
 <body>
+
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="<?= $BASE_URL ?>index.php">
+                <img src="<?= $BASE_URL ?>img/logo.svg" alt="Agenda">
+            </a>
+        </nav>
+    </nav>
