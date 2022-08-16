@@ -9,7 +9,10 @@ $pass = "";
 
 try {
     
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", )
+    $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
+
+    //Ativar modo de erros
+    $conn->setAtribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
 } catch (PDOException $e) {
