@@ -12,6 +12,15 @@ include_once("url.php");
 
 $contacts = [];
 
+
+//Retorna os dados de um contato
+
+
+
+
+
+
+//Retorna todos os contatos
 //Primeira coisa a fazer é puxar os dados da query
 $query = "SELECT * FROM contacts";
 //Como eu não tenho paramentros eu não tenho bind_paran aqui nesse caso
