@@ -2,7 +2,10 @@
   include_once('templates/header.php');
 ?>
 
-    <h1>Criando contato</h1>
+    <div class="container">
+      <?php include_once("templates/backbtn.html"); ?>
+      <h1 id="main-title">Criar contato</h1>
+    </div>
     
 
 <?php
