@@ -12,6 +12,10 @@
             <label for="name">Nome do contato</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome" required>
         </div>
+        <div>
+          <label for="phone">Numero de telefone</label>
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" required>
+        </div>
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
     </div>
