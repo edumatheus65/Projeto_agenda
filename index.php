@@ -4,7 +4,7 @@
 
    <div class="container">
     <?php if(isset($printMSG) && $printMSG != ''): ?>
-        <p id="msg"><?php $printMSG ?></p>        
+        <p id="msg"><?= $printMSG ?></p>        
     <?php endif; ?>
 
     <h1 id="main-title">Minha agenda</h1>

@@ -33,20 +33,22 @@ if(!empty($data)) {
         $stmt->bindParam(":observations", $observations);
 
         try {
-            
+
             $stmt->execute();
-            $_SESSION["msg"] = "Contato criado com sucesso!!";            
-
-
-
-        } catch (PDOException $e) {
-            //ERRO DE CONEXÃO
+            $_SESSION["msg"] = "Contato criado com sucesso!";
+        
+          } catch(PDOException $e) {
+            // erro na conexão
             $error = $e->getMessage();
-            echo "Erro: $error"; 
-        }
+            echo "Erro: $error";
+          }
 
 
     }
+
+
+    //REDIRECT HOME
+    header("Location:" . $BASE_URL . "../index.php");
 
 
 // SELEÇÃO DE DADOS
