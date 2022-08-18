@@ -12,9 +12,13 @@
             <label for="name">Nome do contato</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome" required>
         </div>
-        <div>
+        <div class="form-group">
           <label for="phone">Numero de telefone</label>
           <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" required>
+        </div>
+        <div class="form-group">
+          <label for="observations">observações</label>
+          <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Digite a descrição do contato" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Cadastrar</button>
     </form>
