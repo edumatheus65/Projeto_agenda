@@ -98,9 +98,17 @@
 
 /* CREAT */
 
-#creat-form,
+/* #creat-form,
 #edit-form {
-    /* width: 500px;
-    margin: 0 auto; */
+    width: 500px;
+    margin: 0 auto;
+} */
+
+/* ÚNICA REGRA MOBILE DO PROJETO */
+
+@media(max-width: 480px) {
+    #home-link {
+        display: none;
+    }
 }
 
