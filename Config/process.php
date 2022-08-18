@@ -24,7 +24,7 @@ if(!empty($data)) {
         $phone = $data["phone"];
         $observations = $data["observations"];
 
-        $query = "INSERT INTO contacts (name, phone, observations), VALUES (:name :phone :observations)";
+        $query = "INSERT INTO contacts (name, phone, observations) VALUES (:name, :phone, :observations)";
 
         $stmt = $conn->prepare($query);
 
