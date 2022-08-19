@@ -1,5 +1,7 @@
 # Projeto_agenda
 Agenda para armazenar contatos de fornecedores. Feito com Bootstrap, Html, CSS &amp; PHP.
+Com as 4 quatro principais funcionalidades do CRUD
+Creat - Edit - Update - Delete
 
 
 
